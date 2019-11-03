@@ -69,16 +69,16 @@ public class Model {
 				headY = player.getHead().getY();
 
 		switch (player.getDirection()) {
-			case 0:
+			case UP:
 				player.getHead().setLocation(headX, headY <= 0 ? BOARD_SIZE - 1 : headY - 1);
 				break;
-			case 1:
+			case RIGHT:
 				player.getHead().setLocation(headX == BOARD_SIZE - 1 ? 0 : headX + 1, headY);
 				break;
-			case 2:
+			case DOWN:
 				player.getHead().setLocation(headX, headY == BOARD_SIZE - 1 ? 0 : headY + 1);
 				break;
-			case 3:
+			case LEFT:
 				player.getHead().setLocation(headX <= 0 ? BOARD_SIZE - 1 : headX - 1, headY);
 				break;
 		}

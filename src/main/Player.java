@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Player {
 
-	private int direction = 0;//0-up 1-right 2-down 3-left
+	private Direction direction = Direction.UP;
 	private ArrayList<Point> tiles;
 	private int tilesAdded = 0;
 
@@ -39,11 +39,11 @@ public class Player {
 		return tiles;
 	}
 
-	public int getDirection() {
+	public Direction getDirection() {
 		return direction;
 	}
 
-	public void setDirection(int direction) {
+	public void setDirection(Direction direction) {
 		this.direction = direction;
 	}
 

@@ -15,16 +15,16 @@ public class KeyController implements KeyListener {
 	public void keyPressed(KeyEvent e) {
 		switch (e.getKeyCode()) {
 			case KeyEvent.VK_UP:
-				model.getPlayer().setDirection(0);
+				model.getPlayer().setDirection(Direction.UP);
 				break;
 			case KeyEvent.VK_RIGHT:
-				model.getPlayer().setDirection(1);
+				model.getPlayer().setDirection(Direction.RIGHT);
 				break;
 			case KeyEvent.VK_DOWN:
-				model.getPlayer().setDirection(2);
+				model.getPlayer().setDirection(Direction.DOWN);
 				break;
 			case KeyEvent.VK_LEFT:
-				model.getPlayer().setDirection(3);
+				model.getPlayer().setDirection(Direction.LEFT);
 				break;
 		}
 
